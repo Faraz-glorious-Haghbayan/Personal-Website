@@ -1,0 +1,81 @@
+body {
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  scroll-behavior: smooth;
+}
+#main {
+  background-image: url(https://images.unsplash.com/photo-1519638399535-1b036603ac77?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: aliceblue;
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+  margin-top: 0%;
+  padding-top: 20%;
+}
+h3 {
+  font-size: 2em;
+}
+.bprojects {
+  background-color: #554c9c;
+  align-items: center;
+  border: none;
+  font-size: larger;
+  padding: 2% 5% 2% 5%;
+  font-weight: 550;
+  text-transform: uppercase;
+  color: aliceblue;
+  border-radius: 1em;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.bprojects:hover {
+  background-color: #453c8c;
+}
+#about {
+  margin-top: 0%;
+  margin-left: 5%;
+  width: 90%;
+}
+.header {
+  width: max-content;
+  backdrop-filter: blur(30px);
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  top: 0%;
+  left: 0%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100%;
+}
+.navbar a {
+  font-size: 18px;
+  display: inline;
+  color: aliceblue;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  margin-inline: 20px;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
